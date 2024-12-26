@@ -1,0 +1,66 @@
+{
+  "name": "movies",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "antd": "^5.22.4",
+    "date-fns": "^4.1.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint": "^8.2.0",
+    "lodash.debounce": "^4.0.8",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-content-loader": "^7.0.2",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.26.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "esbuild": "^0.24.2",
+    "esbuild-wasm": "^0.24.2",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "vite": "^6.0.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier-stylelint --write"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-idiomatic-order",
+      "./node_modules/prettier-stylelint/config.js"
+    ],
+    "rules": {
+      "indentation": 4,
+      "string-quotes": "single"
+    }
+  }
+}
