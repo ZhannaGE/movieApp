@@ -1,1 +1,1 @@
-https://movies-59lsrsp53-zhannas-projects-792bc864.vercel.app/
+https://movies-omega-lime.vercel.app/
